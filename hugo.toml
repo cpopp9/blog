@@ -1,0 +1,4 @@
+baseURL = '//coryjpopp.com/'
+languageCode = 'en-us'
+title = 'Swiftly'
+theme = 'hugo-paper'
