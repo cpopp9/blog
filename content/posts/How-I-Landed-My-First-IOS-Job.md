@@ -1,5 +1,6 @@
 ---
 title: "How I Landed My First iOS Job"
+tags: ['swift', 'career journey']
 date: 2022-11-20T09:03:20-08:00
 draft: false
 ---

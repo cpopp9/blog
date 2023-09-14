@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>career journey on Cory J Popp</title>
+    <link>//coryjpopp.com/tags/career-journey/</link>
+    <description>Recent content in career journey on Cory J Popp</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="//coryjpopp.com/tags/career-journey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Landed My First iOS Job</title>
+      <link>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</link>
+      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
+      
+      <guid>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</guid>
+      <description>About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.
+I wanted to give back to this community and share my experience — what worked for me, and what didn’t. Feel free to ask my anything or share your own insights.
+Getting Started with iOS Paul Hudson has an excellent tutorial series called 100 Days of SwiftUI that starts at the absolute beginning.</description>
+    </item>
+    
+  </channel>
+</rss>

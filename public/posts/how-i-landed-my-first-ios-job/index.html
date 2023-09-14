@@ -1,0 +1,336 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>How I Landed My First iOS Job - Cory J Popp</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.
+I wanted to give back to this community and share my experience — what worked for me, and what didn’t. Feel free to ask my anything or share your own insights.
+Getting Started with iOS Paul Hudson has an excellent tutorial series called 100 Days of SwiftUI that starts at the absolute beginning." />
+  <meta name="author" content="Cory J Popp" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="//coryjpopp.com/main.min.css" />
+
+  
+  <script
+    defer
+    src="//coryjpopp.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="//coryjpopp.com/theme.png" />
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="//coryjpopp.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="//coryjpopp.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.118.2">
+
+  
+  
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="How I Landed My First iOS Job">
+<meta itemprop="description" content="About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.
+I wanted to give back to this community and share my experience — what worked for me, and what didn’t. Feel free to ask my anything or share your own insights.
+Getting Started with iOS Paul Hudson has an excellent tutorial series called 100 Days of SwiftUI that starts at the absolute beginning."><meta itemprop="datePublished" content="2022-11-20T09:03:20-08:00" />
+<meta itemprop="dateModified" content="2022-11-20T09:03:20-08:00" />
+<meta itemprop="wordCount" content="1255">
+<meta itemprop="keywords" content="swift,career journey," />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How I Landed My First iOS Job"/>
+<meta name="twitter:description" content="About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.
+I wanted to give back to this community and share my experience — what worked for me, and what didn’t. Feel free to ask my anything or share your own insights.
+Getting Started with iOS Paul Hudson has an excellent tutorial series called 100 Days of SwiftUI that starts at the absolute beginning."/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="//coryjpopp.com/"
+      >Cory J Popp</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">How I Landed My First iOS Job</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Nov 20, 2022</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.</p>
+<p>I wanted to give back to this community and share my experience — what worked for me, and what didn’t. Feel free to ask my anything or share your own insights.</p>
+<h3 id="getting-started-with-ios"><strong>Getting Started with iOS</strong></h3>
+<p>Paul Hudson has an excellent tutorial series called <a href="https://www.hackingwithswift.com/100/swiftui">100 Days of SwiftUI</a> that starts at the absolute beginning. There are many, many swift tutorials out there, but coming from a non-techical background, getting the programming basics down before diving into swift proper was invaluable for me.</p>
+<p>As the title of the series states, the course is 100 days long — or at least thats what the marketing says. As much as I wanted to keep up with the pace of the course, I often found myself taking multiple days to complete many of the lessons because I wanted to make sure I really understood it, which to me meant writing and rewriting the code examples until I felt like I had truly mastered the subject matter.</p>
+<p>For example, I would take the lesson taught that day into a playground and try to recreate my own version of it that is slightly different from the tutorial. This gave me the opportunity to try new things, hit the inevitable wall, and have a great tutorial to fall back on when I got stuck so I could try and figure out what I did wrong.</p>
+<p>Getting things right felt good, but I would also try to intentionally break my code to try and figure out for myself how things work.</p>
+<p>It was frustrating taking such a slow approach, especially as I started to fall behind on the days, but pushing forward before I was ready would have been the wrong move for me. My recommendation is to really take your time and only move on when you feel you have a solid grasp on the lesson.</p>
+<p>In the end I only got about 2/3 of the way through the course before I had enough of the building blocks to start writing my first app.</p>
+<h3 id="building-a-portfolio"><strong>Building a portfolio</strong></h3>
+<p>Tutorials can be great for learning, but at some point you have to put what you learned to use by getting out of your comfort zone and writing your own projects.</p>
+<p>I’m not going to say its impossible to get a job without your own app, but any potential employer is likely to want some kind of proof that you know how to do the job, and in lieu of professional experience, the next best thing is probably an app on the app store.</p>
+<p>I knew personally that I wouldn’t feel ready to take on my first role until I had published my first app. I wanted the experience of creating an app from beginning to end, something to talk to potential employers about, and of course something to put on my resume.</p>
+<p>I chose something that touched on many of the essential features of most apps — fetching an api response, memory management, and a nice looking ui.</p>
+<p>Your app doesn’t need to be sophisticated, nor does it need a ton of features, but it should be as polished as you can possible make it, which ideally means clean code and a polished presentation on the app store.</p>
+<p>Avoid including code in your app that you didn’t write yourself, or at least understand to some degree how it works. There’s nothing wrong with using solutions you found online for problems you’re experiencing in your app, but at some point your cheating yourself out of invaluable experience if you rely on others solutions too often.</p>
+<h3 id="applying-for-jobs"><strong>Applying for jobs</strong></h3>
+<p>Learning and publishing my own app was essential for getting started, but then came time to apply which I found particularly soul crushing.</p>
+<p>I loved doing the actual work, but sending out countless resumes and getting no bites was honestly the worst part of the process for me. I started out just applying to everything I could, but after a few weeks of sending resumes all day and getting no traction I decided I needed to strike a better balance and continued my learning while I was still applying.</p>
+<p>I had limited control over the hiring process, but I could make myself a better applicant.</p>
+<p>I continued for about a month with not even as much as a preliminary interview, which is when I decided to start working on my second app — and with it came additional experience and another thing to put on my resume.</p>
+<p>I told myself that this process may ending taking a while, which gave me the mental space to take my time and not take the countless L’s personally.</p>
+<h3 id="interviewing"><strong>Interviewing</strong></h3>
+<p>I wish I had more to offer here but I only had one interview before getting offered a role.</p>
+<p>There’s a lot of advice floating around to practice technical interview questions, which I’m not going to say is bad advice, but all my employer wanted to talk about was my second app. I got the feeling that they just wanted evidence that I wrote the code myself, understood what it did, and was enthusiastic about the work.</p>
+<p>Publishing my code to a public repo and linking to it in my resume gave them an opportunity to ask me about some of the choices I made when writing that app, which I was more than happy to talk about.</p>
+<p>They did quiz me on how I would solve basic problems, or how I would approach learning new techniques, but I did my best to be honest and speak from my admittedly limited experience, which I think is all they were really interested in.</p>
+<p>Most employers hiring a junior won’t expect you to have all the answers, they just want to get a preview of what it’ll be like to work with you — so above all else, be friendly, professional and honest about what you do and don’t know. Attitude goes a long way.</p>
+<h3 id="summary"><strong>Summary</strong></h3>
+<p>A few more random insights from my experience:</p>
+<p>In the end there are no real shortcuts, take your time, do it the right way and make sure you’re pursuing this career for the right reasons.</p>
+<p>There are predatory companies out there trying to take advantage of entry level applicants. Do your due diligence before giving any company the time of day and if a job posting seems too good to be true it probably is.</p>
+<p>Before applying to any jobs — <strong>create a brand new email and phone number</strong> (google voice) so you don’t absolutely destroy your personal inbox / phone number. Once you start putting your information out there you will get endless spam messages about jobs that aren’t relevant to you.</p>
+<p>Some common advice that I did not do:</p>
+<ul>
+<li>Contribute to open source projects / stackoverflow</li>
+<li>Post to twitter or any other social media site</li>
+<li>Coding bootcamp</li>
+<li>Internship</li>
+<li>Upwork</li>
+</ul>
+<p>Some things that I did, but didn’t end up helping me directly:</p>
+<ul>
+<li>Networking/posting to Linkedin</li>
+<li>Reaching out to my contacts about potential openings at their company</li>
+<li>Reaching out to recruiters</li>
+</ul>
+<p>I did end up joining a iOS group in my city, which didn’t give me any job opportunities but being a part of a community is excellent for encouragement and soliciting advice.</p>
+<p>I hope this helps someone who was in my shoes a few months ago — its not an easy process but I love the work and am so happy I decided to make the switch.</p>
+</section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="//coryjpopp.com/tags/swift"
+      >swift</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="//coryjpopp.com/tags/career-journey"
+      >career journey</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="//coryjpopp.com/posts/79183bd7-28a3-405f-a70c-64fba486a6f8_export-59ce72e7-e363-4d33-9513-e1654f183b82/untitled-7f31fe66bf3344baa5dddb7014b7db91/"
+      ><span>Swipe to delete from lists in SwiftUI</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="//coryjpopp.com/">Cory J Popp</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>
