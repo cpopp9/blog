@@ -1,4 +1,16 @@
 baseURL = '//coryjpopp.com/'
 languageCode = 'en-us'
-title = 'Cory J Popp'
+title = 'Learning w/ Swift'
 theme = 'hugo-paper'
+
+[params]
+
+twitter = 'corypopp'
+github = 'cpopp9' 
+linkedin = 'coryjpopp'
+
+avatar = 'cpopp9@gmail.com'
+name = 'Cory Popp'
+bio = 'iOS Developer in South Philadelphia'
+
+monoDarkIcon = false

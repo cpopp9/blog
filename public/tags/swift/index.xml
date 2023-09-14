@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Swift on Cory J Popp</title>
+    <title>swift on Cory J Popp</title>
     <link>//coryjpopp.com/tags/swift/</link>
-    <description>Recent content in Swift on Cory J Popp</description>
+    <description>Recent content in swift on Cory J Popp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="//coryjpopp.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
@@ -20,10 +20,10 @@ Getting Started with iOS Paul Hudson has an excellent tutorial series called 10
     
     <item>
       <title>Swipe to delete from lists in SwiftUI</title>
-      <link>//coryjpopp.com/posts/79183bd7-28a3-405f-a70c-64fba486a6f8_export-59ce72e7-e363-4d33-9513-e1654f183b82/untitled-7f31fe66bf3344baa5dddb7014b7db91/</link>
+      <link>//coryjpopp.com/posts/swipe-to-delete-from-lists-in-swiftui/</link>
       <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
       
-      <guid>//coryjpopp.com/posts/79183bd7-28a3-405f-a70c-64fba486a6f8_export-59ce72e7-e363-4d33-9513-e1654f183b82/untitled-7f31fe66bf3344baa5dddb7014b7db91/</guid>
+      <guid>//coryjpopp.com/posts/swipe-to-delete-from-lists-in-swiftui/</guid>
       <description>SwiftUI includes a native solution for a swipe to delete function from within lists, which works exactly as you would expect with just a few lines of additional code.
 The code itself is simple, and involves us creating a ForEach of our array within our list, and adding a .onDelete modifier to trigger the removeItems function that we have created below our view body.
 💡 It’s important to note that our .</description>
