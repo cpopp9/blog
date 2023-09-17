@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag2 on Learning w/ Swift</title>
+    <link>//coryjpopp.com/tags/tag2/</link>
+    <description>Recent content in tag2 on Learning w/ Swift</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="//coryjpopp.com/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Template Post</title>
+      <link>//coryjpopp.com/posts/posttemplate/</link>
+      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
+      
+      <guid>//coryjpopp.com/posts/posttemplate/</guid>
+      <description>body
+//code In Action body</description>
+    </item>
+    
+  </channel>
+</rss>

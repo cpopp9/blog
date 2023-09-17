@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>career journey on Cory J Popp</title>
+    <title>career journey on Learning w/ Swift</title>
     <link>//coryjpopp.com/tags/career-journey/</link>
-    <description>Recent content in career journey on Cory J Popp</description>
+    <description>Recent content in career journey on Learning w/ Swift</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="//coryjpopp.com/tags/career-journey/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="//coryjpopp.com/tags/career-journey/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Landed My First iOS Job</title>
       <link>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</link>
-      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</guid>
       <description>About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.

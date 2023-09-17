@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unit Testing on Learning w/ Swift</title>
+    <link>//coryjpopp.com/tags/unit-testing/</link>
+    <description>Recent content in Unit Testing on Learning w/ Swift</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="//coryjpopp.com/tags/unit-testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unit Testing within Swift Playground</title>
+      <link>//coryjpopp.com/posts/unit-testing-within-swift-playground/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/unit-testing-within-swift-playground/</guid>
+      <description>Creating unit tests in Swift Playground is an easy way to double-check that you&amp;rsquo;re getting the outcome you expect when developing new features.
+In this example, I recreated the fizzbuzz challenge and ran it through multiple tests to ensure it was working as intended. The bottom line executes all of my tests within the FizzBuzzTests class.
+import Foundation import XCTest class FizzBuzzTests: XCTestCase { let fizzArray = [3, 6, 9, 12, 18, 21, 24, 27] let buzzArray = [5, 10, 20, 25, 35, 40, 50, 55] let fizzbuzzArray = [15, 30, 45, 60, 75, 90, 105, 120] func testFizz() { for i in fizzArray { let result = fizzbuzz(number: i) XCTAssertEqual(result, &amp;#34;Fizz&amp;#34;) } } func testBuzz() { for i in buzzArray { let result = fizzbuzz(number: i) XCTAssertEqual(result, &amp;#34;Buzz&amp;#34;) } } func testFizzBuzz() { for i in fizzbuzzArray { let result = fizzbuzz(number: i) XCTAssertEqual(result, &amp;#34;FizzBuzz&amp;#34;) } } } func fizzbuzz(number: Int) -&amp;gt; String { switch (number % 3 == 0, number % 5 == 0) { case (true, false): return &amp;#34;Fizz&amp;#34; case (false, true): return &amp;#34;Buzz&amp;#34; case (true, true): return &amp;#34;FizzBuzz&amp;#34; case (false, false): return String(number) } } FizzBuzzTests.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 ---
 title: "How I Landed My First iOS Job"
 tags: ['swift', 'career journey']
-date: 2022-11-20T09:03:20-08:00
+date:  2023-04-14
 draft: false
 ---
 About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.

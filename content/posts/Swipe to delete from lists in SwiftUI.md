@@ -1,7 +1,7 @@
 ---
 title: "Swipe to delete from lists in SwiftUI"
 tags: ['Swift', 'SwiftUI']
-date: 2022-11-20T09:03:20-08:00
+date:  2023-09-13
 draft: false
 ---
 SwiftUI includes a native solution for a swipe to delete function from within lists, which works exactly as you would expect with just a few lines of additional code.

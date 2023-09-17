@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UX/UI on Learning w/ Swift</title>
+    <link>//coryjpopp.com/tags/ux/ui/</link>
+    <description>Recent content in UX/UI on Learning w/ Swift</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//coryjpopp.com/tags/ux/ui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Circular Progress Animation</title>
+      <link>//coryjpopp.com/posts/circular-progress-animation/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/circular-progress-animation/</guid>
+      <description>This is undoubtably quite a lot of code that can be reduced, but I was happy with my first draft of this circular progress animation that I created in SwiftUI.
+TimelineView() appears to be extremely efficient in creating animations that rely on a timer, without any of the inefficiencies of leaving a timer running constantly.
+struct CircularProgress: View { var lineWidth: CGFloat = 40 @State var secondsCounter: Double = 0 @State var iconSizer: Bool = false var body: some View { TimelineView(.</description>
+    </item>
+    
+    <item>
+      <title>Scrollable Gallaries in SwiftUI</title>
+      <link>//coryjpopp.com/posts/scrollable-gallaries-in-swiftui/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/scrollable-gallaries-in-swiftui/</guid>
+      <description>TabView in SwiftUI makes creating scrolling galleries a breeze when combined with the optional .tabViewStyle(PageTabViewStyle()) modifier.
+In this example I overwrote the default appearance of the page indicators by running a simple function when the view appears so that the indicator dots are visible on a white background.
+import SwiftUI struct ImageSlider: View { private let images = [&amp;#34;Barbie&amp;#34;, &amp;#34;Oppenheimer&amp;#34;, &amp;#34;Blue Beetle&amp;#34;, &amp;#34;Haunted Mansion&amp;#34;, &amp;#34;Mission Impossible&amp;#34;] var body: some View { TabView { ForEach(images, id: \.</description>
+    </item>
+    
+    <item>
+      <title>Using Custom View Modifiers within SwiftUI</title>
+      <link>//coryjpopp.com/posts/using-custom-view-modifiers-within-swiftui/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/using-custom-view-modifiers-within-swiftui/</guid>
+      <description>Custom view modifiers are extremely easy to create in SwiftUI, and allow you to:
+reuse styles simplify your code maintain consistency update them quickly everywhere in your project import SwiftUI struct ButtonIcon: ViewModifier { func body(content: Content) -&amp;gt; some View { content .foregroundStyle(.white) .padding(EdgeInsets(top: 10, leading: 25, bottom: 10, trailing: 25)) .background(.green) .clipShape(Capsule()) } } struct CustomViewModifiers: View { var body: some View { Button() { // take picture } label: { Image(systemName: &amp;#34;camera.</description>
+    </item>
+    
+    <item>
+      <title>Using FocusState within SwiftUI</title>
+      <link>//coryjpopp.com/posts/using-focusstate-within-swiftui/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/using-focusstate-within-swiftui/</guid>
+      <description>@FocusState is a property wrapper within SwiftUI that allows us to track where the user is focused within our app.
+In this example, we can suggest to the user to start on the first text field by preselecting focus for them, and provide visual feedback when they switch between fields.
+import SwiftUI struct FocusStateTest: View { private enum FocusedField { case firstName, schoolAttended } @State private var firstName = &amp;#34;&amp;#34; @State private var schoolAttended = &amp;#34;&amp;#34; @FocusState private var focusedField: FocusedField?</description>
+    </item>
+    
+    <item>
+      <title>Live Updates Animation</title>
+      <link>//coryjpopp.com/posts/live-updates-animation/</link>
+      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/live-updates-animation/</guid>
+      <description>I came across a simple yet beautiful animation in the New York Times app the other day denoting their live updates feed.
+It has three dots, all with different shades of red, alternating to imply to the user that changes to the story are happening rapidly in real time.
+I always love challenging myself to get better at animations within SwiftUI, so I set out to recreate this cool little design.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,32 +1,86 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>swift on Cory J Popp</title>
+    <title>Swift on Learning w/ Swift</title>
     <link>//coryjpopp.com/tags/swift/</link>
-    <description>Recent content in swift on Cory J Popp</description>
+    <description>Recent content in Swift on Learning w/ Swift</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="//coryjpopp.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="//coryjpopp.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How I Landed My First iOS Job</title>
-      <link>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</link>
-      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
+      <title>Adding Constraints to Generics in Swift</title>
+      <link>//coryjpopp.com/posts/adding-constraints-to-generics-in-swift/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</guid>
-      <description>About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.
-I wanted to give back to this community and share my experience — what worked for me, and what didn’t. Feel free to ask my anything or share your own insights.
-Getting Started with iOS Paul Hudson has an excellent tutorial series called 100 Days of SwiftUI that starts at the absolute beginning.</description>
+      <guid>//coryjpopp.com/posts/adding-constraints-to-generics-in-swift/</guid>
+      <description>Adding constraints to generics lets you narrow down what type of values you will be providing in your function while still maintaining the flexibility that generics allow.
+In this example, I&amp;rsquo;ve added a constraint to Value that say whatever I pass in must conform to the Numeric protocol - meaning anything I pass to this function must be an array of integers, doubles, floats, or anything else that conforms to Numeric.</description>
+    </item>
+    
+    <item>
+      <title>Circular Progress Animation</title>
+      <link>//coryjpopp.com/posts/circular-progress-animation/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/circular-progress-animation/</guid>
+      <description>This is undoubtably quite a lot of code that can be reduced, but I was happy with my first draft of this circular progress animation that I created in SwiftUI.
+TimelineView() appears to be extremely efficient in creating animations that rely on a timer, without any of the inefficiencies of leaving a timer running constantly.
+struct CircularProgress: View { var lineWidth: CGFloat = 40 @State var secondsCounter: Double = 0 @State var iconSizer: Bool = false var body: some View { TimelineView(.</description>
+    </item>
+    
+    <item>
+      <title>Unit Testing within Swift Playground</title>
+      <link>//coryjpopp.com/posts/unit-testing-within-swift-playground/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/unit-testing-within-swift-playground/</guid>
+      <description>Creating unit tests in Swift Playground is an easy way to double-check that you&amp;rsquo;re getting the outcome you expect when developing new features.
+In this example, I recreated the fizzbuzz challenge and ran it through multiple tests to ensure it was working as intended. The bottom line executes all of my tests within the FizzBuzzTests class.
+import Foundation import XCTest class FizzBuzzTests: XCTestCase { let fizzArray = [3, 6, 9, 12, 18, 21, 24, 27] let buzzArray = [5, 10, 20, 25, 35, 40, 50, 55] let fizzbuzzArray = [15, 30, 45, 60, 75, 90, 105, 120] func testFizz() { for i in fizzArray { let result = fizzbuzz(number: i) XCTAssertEqual(result, &amp;#34;Fizz&amp;#34;) } } func testBuzz() { for i in buzzArray { let result = fizzbuzz(number: i) XCTAssertEqual(result, &amp;#34;Buzz&amp;#34;) } } func testFizzBuzz() { for i in fizzbuzzArray { let result = fizzbuzz(number: i) XCTAssertEqual(result, &amp;#34;FizzBuzz&amp;#34;) } } } func fizzbuzz(number: Int) -&amp;gt; String { switch (number % 3 == 0, number % 5 == 0) { case (true, false): return &amp;#34;Fizz&amp;#34; case (false, true): return &amp;#34;Buzz&amp;#34; case (true, true): return &amp;#34;FizzBuzz&amp;#34; case (false, false): return String(number) } } FizzBuzzTests.</description>
+    </item>
+    
+    <item>
+      <title>Live Updates Animation</title>
+      <link>//coryjpopp.com/posts/live-updates-animation/</link>
+      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/live-updates-animation/</guid>
+      <description>I came across a simple yet beautiful animation in the New York Times app the other day denoting their live updates feed.
+It has three dots, all with different shades of red, alternating to imply to the user that changes to the story are happening rapidly in real time.
+I always love challenging myself to get better at animations within SwiftUI, so I set out to recreate this cool little design.</description>
     </item>
     
     <item>
       <title>Swipe to delete from lists in SwiftUI</title>
       <link>//coryjpopp.com/posts/swipe-to-delete-from-lists-in-swiftui/</link>
-      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
+      <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>//coryjpopp.com/posts/swipe-to-delete-from-lists-in-swiftui/</guid>
       <description>SwiftUI includes a native solution for a swipe to delete function from within lists, which works exactly as you would expect with just a few lines of additional code.
 The code itself is simple, and involves us creating a ForEach of our array within our list, and adding a .onDelete modifier to trigger the removeItems function that we have created below our view body.
 💡 It’s important to note that our .</description>
+    </item>
+    
+    <item>
+      <title>Adding Transparency to Sheets in SwiftUI</title>
+      <link>//coryjpopp.com/posts/adding-transparency-to-sheets-in-swiftui/</link>
+      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/adding-transparency-to-sheets-in-swiftui/</guid>
+      <description>Native sheets in iOS are by default opaque, and require a bit of extra code to enable any form of transparency.
+First we can create a new background view that conforms to UIViewRepresentable.
+struct BackgroundClearView: UIViewRepresentable { func makeUIView(context: Context) -&amp;gt; UIView { let view = UIView() DispatchQueue.main.async { view.superview?.superview?.backgroundColor = .clear } return view } func updateUIView(_ uiView: UIView, context: Context) {} } And then we can use that transparent view as a background view within our sheet to enable transparency.</description>
+    </item>
+    
+    <item>
+      <title>How I Landed My First iOS Job</title>
+      <link>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</link>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</guid>
+      <description>About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.
+I wanted to give back to this community and share my experience — what worked for me, and what didn’t. Feel free to ask my anything or share your own insights.
+Getting Started with iOS Paul Hudson has an excellent tutorial series called 100 Days of SwiftUI that starts at the absolute beginning.</description>
     </item>
     
   </channel>

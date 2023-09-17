@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Cory J Popp</title>
+    <title>Categories on Learning w/ Swift</title>
     <link>//coryjpopp.com/categories/</link>
-    <description>Recent content in Categories on Cory J Popp</description>
+    <description>Recent content in Categories on Learning w/ Swift</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="//coryjpopp.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>

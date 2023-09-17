@@ -1,0 +1,418 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Circular Progress Animation - Learning w/ Swift</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="This is undoubtably quite a lot of code that can be reduced, but I was happy with my first draft of this circular progress animation that I created in SwiftUI.
+TimelineView() appears to be extremely efficient in creating animations that rely on a timer, without any of the inefficiencies of leaving a timer running constantly.
+struct CircularProgress: View { var lineWidth: CGFloat = 40 @State var secondsCounter: Double = 0 @State var iconSizer: Bool = false var body: some View { TimelineView(." />
+  <meta name="author" content="Cory Popp" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="//coryjpopp.com/main.min.css" />
+
+  
+  <script
+    defer
+    src="//coryjpopp.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="//coryjpopp.com/theme.png" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/b10663b5df6ee80fbe9e8ef31d12ae9c?s=160&amp;d=identicon" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="//coryjpopp.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="//coryjpopp.com/github.svg" />
+  
+  <link rel="preload" as="image" href="//coryjpopp.com/linkedin.svg" />
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="//coryjpopp.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="//coryjpopp.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.118.2">
+
+  
+  
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="Circular Progress Animation">
+<meta itemprop="description" content="This is undoubtably quite a lot of code that can be reduced, but I was happy with my first draft of this circular progress animation that I created in SwiftUI.
+TimelineView() appears to be extremely efficient in creating animations that rely on a timer, without any of the inefficiencies of leaving a timer running constantly.
+struct CircularProgress: View { var lineWidth: CGFloat = 40 @State var secondsCounter: Double = 0 @State var iconSizer: Bool = false var body: some View { TimelineView(."><meta itemprop="datePublished" content="2023-09-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-09-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="181">
+<meta itemprop="keywords" content="Swift,SwiftUI,Animation,UX/UI," />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Circular Progress Animation"/>
+<meta name="twitter:description" content="This is undoubtably quite a lot of code that can be reduced, but I was happy with my first draft of this circular progress animation that I created in SwiftUI.
+TimelineView() appears to be extremely efficient in creating animations that rely on a timer, without any of the inefficiencies of leaving a timer running constantly.
+struct CircularProgress: View { var lineWidth: CGFloat = 40 @State var secondsCounter: Double = 0 @State var iconSizer: Bool = false var body: some View { TimelineView(."/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="//coryjpopp.com/"
+      >Learning w/ Swift</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/corypopp"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/cpopp9"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/coryjpopp"
+        target="_blank"
+        rel="me"
+      >
+        linkedin
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Circular Progress Animation</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Sep 17, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p><img src="/CircularProgressAnimation.gif" alt="CircularProgressAnimation.gif"></p>
+<p>This is undoubtably quite a lot of code that can be reduced, but I was happy with my first draft of this circular progress animation that I created in SwiftUI.</p>
+<p>TimelineView() appears to be extremely efficient in creating animations that rely on a timer, without any of the inefficiencies of leaving a timer running constantly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">CircularProgress</span>: View {
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> lineWidth: CGFloat = <span style="color:#ae81ff">40</span>
+</span></span><span style="display:flex;"><span>    @State <span style="color:#66d9ef">var</span> secondsCounter: Double = <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    @State <span style="color:#66d9ef">var</span> iconSizer: Bool = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> body: some View {
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        TimelineView(.animation) { context <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> _ = increaseSecondsCounter(secondsCounter: <span style="color:#960050;background-color:#1e0010">$</span>secondsCounter)
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            ZStack {
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> secondsCounter <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span> {
+</span></span><span style="display:flex;"><span>                    Text(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>Int<span style="color:#e6db74">(</span>secondsCounter<span style="color:#e6db74">))</span><span style="color:#e6db74">%&#34;</span>)
+</span></span><span style="display:flex;"><span>                        .font(.title.bold())
+</span></span><span style="display:flex;"><span>                        .foregroundColor(.green)
+</span></span><span style="display:flex;"><span>                } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                    Image(systemName: <span style="color:#e6db74">&#34;bolt.fill&#34;</span>)
+</span></span><span style="display:flex;"><span>                        .font(.system(size: iconSizer ? <span style="color:#ae81ff">40</span> : <span style="color:#ae81ff">60</span>))
+</span></span><span style="display:flex;"><span>                        .foregroundColor(.green)
+</span></span><span style="display:flex;"><span>                        .animation(.spring(), value: iconSizer)
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                Circle()
+</span></span><span style="display:flex;"><span>                    .trim(from: <span style="color:#ae81ff">0</span>, to: secondsCounter <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.01</span>)
+</span></span><span style="display:flex;"><span>                    .stroke(.green, style: StrokeStyle(lineWidth: lineWidth, lineCap: .round, lineJoin: .round))
+</span></span><span style="display:flex;"><span>                    .rotationEffect(.degrees(<span style="color:#f92672">-</span><span style="color:#ae81ff">90</span>))
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            .frame(width: <span style="color:#ae81ff">200</span>, height: <span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">increaseSecondsCounter</span>(secondsCounter: Binding&lt;Double&gt;) {
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">self</span>.secondsCounter <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span> {
+</span></span><span style="display:flex;"><span>            DispatchQueue.main.async {
+</span></span><span style="display:flex;"><span>                secondsCounter.wrappedValue <span style="color:#f92672">+=</span> <span style="color:#ae81ff">0.005</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> seconds = Calendar.current.component(.second, from: Date())
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> seconds.isMultiple(of: <span style="color:#ae81ff">2</span>) {
+</span></span><span style="display:flex;"><span>                iconSizer = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>            } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                iconSizer = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="//coryjpopp.com/tags/swift"
+      >Swift</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="//coryjpopp.com/tags/swiftui"
+      >SwiftUI</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="//coryjpopp.com/tags/animation"
+      >Animation</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="//coryjpopp.com/tags/ux/ui"
+      >UX/UI</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="//coryjpopp.com/posts/adding-constraints-to-generics-in-swift/"
+      ><span class="mr-1.5">←</span><span>Adding Constraints to Generics in Swift</span></a
+    >
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="//coryjpopp.com/posts/scrollable-gallaries-in-swiftui/"
+      ><span>Scrollable Gallaries in SwiftUI</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="//coryjpopp.com/">Learning w/ Swift</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

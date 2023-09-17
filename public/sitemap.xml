@@ -2,30 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//coryjpopp.com/tags/career-journey/</loc>
-    <lastmod>2022-11-20T09:03:20-08:00</lastmod>
+    <loc>//coryjpopp.com/posts/adding-constraints-to-generics-in-swift/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/tags/animation/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/posts/circular-progress-animation/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//coryjpopp.com/</loc>
-    <lastmod>2022-11-20T09:03:20-08:00</lastmod>
-  </url><url>
-    <loc>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</loc>
-    <lastmod>2022-11-20T09:03:20-08:00</lastmod>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//coryjpopp.com/posts/</loc>
-    <lastmod>2022-11-20T09:03:20-08:00</lastmod>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/posts/scrollable-gallaries-in-swiftui/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//coryjpopp.com/tags/swift/</loc>
-    <lastmod>2022-11-20T09:03:20-08:00</lastmod>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//coryjpopp.com/tags/swiftui/</loc>
-    <lastmod>2022-11-20T09:03:20-08:00</lastmod>
-  </url><url>
-    <loc>//coryjpopp.com/posts/swipe-to-delete-from-lists-in-swiftui/</loc>
-    <lastmod>2022-11-20T09:03:20-08:00</lastmod>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//coryjpopp.com/tags/</loc>
-    <lastmod>2022-11-20T09:03:20-08:00</lastmod>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/tags/unit-testing/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/posts/unit-testing-within-swift-playground/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/posts/using-custom-view-modifiers-within-swiftui/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/posts/using-focusstate-within-swiftui/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/posts/live-updates-animation/</loc>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/posts/swipe-to-delete-from-lists-in-swiftui/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/posts/adding-transparency-to-sheets-in-swiftui/</loc>
+    <lastmod>2023-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/tags/career-journey/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//coryjpopp.com/categories/</loc>
+  </url><url>
+    <loc>//coryjpopp.com/tags/ux/ui/</loc>
   </url>
 </urlset>
